@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    text-transform: uppercase;
+    box-shadow: 2px 1px 2px 2px honeydew;
+}
+label{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+nav ul li{
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(51, 48, 48);
+}
+
+span{
+   display: flex;
+   justify-content: flex-end;
+   padding: 10px 15px;
+   font-size: 20px;
+   display: none;
+   cursor: pointer;
+}
+/* Carousel */
+.carousel .slide {
+    height: 80vh;
+    width: 100%;
+}
+.carousel-item img{
+    height: 80vh;
+ background-color: burlywood;
+}
+/* new-arrival-con */
+.new-arrival-con h4{
+padding: 30px;
+text-align: center;
+}
+.new-arrival-img-con{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* Shop Page */
+.showcase{
+    height: 50vh;
+    background-image: url(images/pexels-steve-johnson-2182727.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.product-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.product{
+   padding: 10px;
+   border-bottom: 1px solid rgb(172, 171, 171);
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+}
+.product > a{
+    text-decoration: none;
+    color: rgb(104, 100, 100);
+    padding: 5px 20px;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+.product > a:hover{
+    border: 1px solid rgb(59, 57, 57);
+    background-color: rgba(0, 0, 0,0.8);
+    color: rgb(255, 255, 255);
+}
+.product > img{
+    transition: opacity 1s ease-in-out;
+}
+.product > img:hover{
+    opacity: 0.3;
+}
+
+/* Shipping Container */
+.shipping-con{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(201, 34, 34);
+    color: white;
+    padding: 35px;
+    margin-top: 50px;
+}
+.shipping-con div h5{
+    margin: 10px 0px;
+    align-content: center;
+}
+/* Footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+footer > div{
+    width: 20%;
+    padding: 20px;
+}
+.btm-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    
+}
+.btm-footer .sm-icons ul{
+    display: flex;
+    list-style: none;
+   
+}
+.btm-footer .sm-icons ul li i{
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(65, 62, 62);
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin-top: 40px;
+}
+.gallery > div{
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+    background-position: center;
+}
+
+.g1{
+    grid-column: 1/4;
+    background-image: url('images/pexels-pixabay-262484.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.g4{
+grid-column: 2/5;
+background-image: url('images/pexels-killian-o\'neill-1179101.jpg');
+}
+.g2{
+    background-image: url('images/pexels-kalpesh-patel-3083461.jpg');
+}
+.g3{
+    background-image: url('images/pexels-jonathan-petersson-404181.jpg');
+}
+/* Single Product Page */
+.single-product-con{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: auto;
+    margin-top: 40px;
+}
+.product-img{
+    width: 50%;
+}
+
+.product-details table {
+    border-collapse: collapse;
+  }
+  td, th {
+    border-bottom: 1px solid #d4d4d4;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+
+  /* Scroll up button */
+  .scroll-up {
+    position: fixed;
+    top:90vh; 
+    right: 25px;
+    background-color: rgb(145, 33, 33);
+    margin: auto;
+    padding: 8px;
+    z-index: 2;
+}
+.scroll-up i{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Contact form */
+.contact-form{
+    width: 50%;
+    margin: auto;
+}
+.contact-form h3{
+   text-align: center;
+   color: rgb(65, 62, 62);
+   margin: 25px 10px;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #181d18;
+  }
+
+  .contact-details-con{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      margin: auto;
+      padding: 5px;
+      align-content: center;
+      margin-top: 50px;
+
+  }
+ .contact-detail{
+      min-width: 300px;
+      margin: auto;
+      height: 250px;
+     padding: 20px 40px;
+     margin: 5px;
+     border: 1px solid rgb(204, 203, 203);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-self: center;  
+  }
+  .contact-detail h4, .contact-detail p{
+    justify-content: center;
+    align-self: center; 
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .carousel .slide {
+        height: 40vh;
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 40vh;
+     background-color: burlywood;
+    }
+    .gallery > div{
+        height: 300px;
+    }
+    .contact-form{
+        width: 75%;
+        margin: auto;
+    }
+    footer > div{
+        width: 80%;
+        margin: auto;
+    }
+    span{
+        display: block;
+     }
+     #menu {
+         display: none;
+         margin-top: 50px;
+     }
+     #lg-menu{
+        display: none;  
+     }
+     .contact-detail{
+        min-width: 100%;
+    }
+  }
