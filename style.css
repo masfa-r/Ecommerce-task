@@ -20,16 +20,10 @@ header{
     top: 0;
     z-index: 5;  
 }
-label{
-    text-transform: none;
-    padding: 20px 20px;
-    font-size: 30px;
-    font-weight: 900;
-    color: rgb(100, 13, 13);
-}
 nav{
     display: flex;
 }
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -42,7 +36,7 @@ nav ul li{
     padding:10px;
     margin: 0px 10px;
 }
-nav ul li a{
+nav ul li a, label >a{
     position: relative;
     text-decoration: none;
     color: grey;
@@ -62,10 +56,19 @@ nav ul li a:hover::before{
     height: 100%;
     width: 100%;
 }
-nav ul li a:hover{
+nav ul li a:hover, label >a:hover{
     text-decoration: none;
     color:rgb(78, 20, 20);
 }
+label{
+    padding: 18px 20px;
+    text-transform: capitalize;
+}
+label a{
+    font-size: 20px;
+    
+}
+
 span{
    display: flex;
    justify-content: flex-end;
@@ -110,9 +113,7 @@ letter-spacing: 0.2em;
   width: 340px;
   height: 340px;
 }
-/* .new-arrival > img:hover{
-  transform: scaleX(-1.1);
-} */
+
 .new-arrival .overlay{
       position: absolute;
       left: 0;
@@ -156,12 +157,14 @@ letter-spacing: 0.2em;
 
 /*---------------------------------SHOP PAGE-----------------------------------*/
 .showcase{
-    height: 50vh;
-    background-image: url(images/pexels-steve-johnson-2182727.jpg);
+    height: 60vh;
+    /* background-image: url(images/pexels-steve-johnson-2182727.jpg); */
+    background-image: url(images/pexels-castorly-stock-3829448.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;  
 }
+
 .product-container{
     width: 80%;
     margin: auto;
@@ -194,10 +197,10 @@ letter-spacing: 0.2em;
     color: rgb(255, 255, 255);
 }
 .product > img{
-    transition: opacity 1s ease-in-out;
+    transition: 0.5s ease-in;
 }
 .product > img:hover{
-    opacity: 0.3;
+    transform: scale(0.9);
 }
 /* ----------------------SHIPPING SECTION (HOME PAGE)--------------------------*/
 .shipping-con{
@@ -232,6 +235,7 @@ letter-spacing: 0.2em;
     grid-template-columns: repeat(4,1fr);
     gap: 5px;
     margin-top: 60px;
+    overflow: hidden;
 }
 .gallery > div{
     height: 450px;
@@ -256,6 +260,7 @@ background-image: url('images/pexels-killian-o\'neill-1179101.jpg');
 .g3{
     background-image: url('images/pexels-jonathan-petersson-404181.jpg');
 }
+
 /* -----------------------SINGLE PRODUCT DETAIL PAGE----------------------------------*/
 .single-product-con{
     display: flex;
@@ -358,17 +363,21 @@ input{
   } 
   input[type=submit] {
     width: 100%;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    padding: 15px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: white ;
+    transition: background-color 0.2s ease-in-out;
+    
   }
   input[type=submit]:hover {
-    background-color: #181d18;
+    border: 1px solid rgb(59, 57, 57);
+    background-color: rgba(0, 0, 0,0.8);
+    color: rgb(255, 255, 255);
   }
+
   .contact-details-con{
       display: flex;
       flex-wrap: wrap;
@@ -479,6 +488,9 @@ footer > div{
         height: 260px;
         margin-top: 10px;
     }
+    .new-arrival .overlay p{
+        font-size: 15px;
+    }
     .new-arrival > img{ 
         width: 260px;
         height: 260px;
@@ -547,5 +559,6 @@ footer > div{
           height: 30vh;
       }
   }
+ 
 
 

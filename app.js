@@ -1,9 +1,9 @@
 function myFunc(){
-    var x = document.querySelector("#menu");
-    if (x.style.display == "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display="none";
+    var menu = document.querySelector("#menu");
+    if (menu.style.display == "none") {
+        menu.style.display = "block";
+    } else{
+        menu.style.display="none";
     }
 
  }
